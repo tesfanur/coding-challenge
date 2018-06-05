@@ -5,8 +5,8 @@
  * Your function should return true if any value appears at least twice in the array, 
  * and it should return false if every element is distinct. *
  */
-//start time: 6:51 AM -  6:55 AM, 7:20 AM -  7:23 AM => 7min
-
+//repo: https://github.com/tesfanur/coding-challenge.git
+ 
 let duplicationExists = (arrayInput) => {
     //loop through each array element and compare each element 
     //with the remaining array elements

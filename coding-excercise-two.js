@@ -7,10 +7,10 @@
  * has the largest product = 6.
  */
 //Solution function for the question above
-
+//repo: https://github.com/tesfanur/coding-challenge.git
 let consecMaxProduct = (arrayInput) => {
     //declare a variable to hold product of consecutive elements of the arrayInput 
-    let maxProduct;
+    let maxProduct, a,b;
     //check array length and return a proper 
     //message for a user
     if (arrayInput.length == 0)
@@ -21,16 +21,22 @@ let consecMaxProduct = (arrayInput) => {
     //loop through the array elements
     for (let i = 0; i < arrayInput.length; i++) {
         //initialize maxProduct variable with the first consecutive array elements product
-        if (i <= 1)
+        if (i <= 1){
             maxProduct = arrayInput[0] * arrayInput[1];
+            a=arrayInput[0];
+            b=arrayInput[1];
+        }
         //then compare the initial product with the remaining consecutive array elements product
         //and assign the max value to maxProduct variable
-        if (maxProduct < arrayInput[i] * arrayInput[i + 1] && i + 1 < arrayInput.length)
+        if (maxProduct < arrayInput[i] * arrayInput[i + 1] && i + 1 < arrayInput.length){
             maxProduct = arrayInput[i] * arrayInput[i + 1];
+            a=arrayInput[i];
+            b=arrayInput[i+1];
+        }
 
     }
     //return maxProduct;
-    return console.log(maxProduct);
+    return console.log(maxProduct,"subarray for this maximum product:",[a, b]);
 }
 /**
  * Test consecMaxProduct function
