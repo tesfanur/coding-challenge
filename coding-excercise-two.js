@@ -41,17 +41,17 @@ let consecMaxProduct = (arrayInput) => {
 /**
  * Test consecMaxProduct function
  */
-//returns 200
+//returns 200 'subarray for this maximum product:' [ 100, 2 ]
 consecMaxProduct([100, 2, 3, 4, 5]);
-//returns 150
+//returns 150 'subarray for this maximum product:' [ 50, 3 ]
 consecMaxProduct([1, 2, 50, 3, 4, 5]);
-//returns 160
+//returns 160 'subarray for this maximum product:' [ 16, 10 ]
 consecMaxProduct([10, 2, 5, 30, 4, 16, 10, -50, 10]);
-//returns 6
+//returns 6 'subarray for this maximum product:' [ 2, 3 ]
 consecMaxProduct([2, 3, -2, 4]);
 //returns "the array is empty"
 consecMaxProduct([]);
 //returns "the array has only one element"
 consecMaxProduct([2]);
-//returns 30
+//returns 30 'subarray for this maximum product:' [ 2, 15 ]
 consecMaxProduct([2, 15]);
