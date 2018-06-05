@@ -6,7 +6,7 @@
  * and it should return false if every element is distinct. *
  */
 //repo: https://github.com/tesfanur/coding-challenge.git
- 
+
 let duplicationExists = (arrayInput) => {
     //loop through each array element and compare each element 
     //with the remaining array elements
